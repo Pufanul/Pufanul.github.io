@@ -1,0 +1,198 @@
+html, body
+{
+	margin: 0;
+}
+
+body
+{
+	background: #eee;	
+	font-family: "Helvetica Neue", Helvetica;
+}
+
+div
+{
+	box-sizing: border-box;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+#main 
+{
+	margin: 0 auto 0 auto;
+	padding: 0px;
+	max-width: 850px;
+	width: 100%;
+	height: 100vh;
+	background: #EEE;
+}
+
+#header
+{
+	position: relative;
+	height: 6vh;
+}
+#header.row {
+	padding-top: 1.4vh;
+}
+
+#header h1
+{
+	font-size: 3.2vh;
+	margin: 0;
+	text-align: center;
+}
+
+#scorecontainer
+{
+	position: absolute;
+	right: 0;
+	top: 2vh;
+	font-size: 14px;
+}
+#highscorecontainer
+{
+	
+}
+.scorebox {
+	border: solid 1px #111;
+	padding: 5px 10px 5px 10px;
+	display: inline;
+	background: rgb(223, 129, 28);
+	color: #FAFAFA;
+}
+.green {
+	background: #009933;
+}
+#reset {
+	background: #666;
+	border: 1px solid #888;
+	padding: 3px 10px 3px 10px;
+	font-size: 14px;
+	color: #fff;
+}
+#reset:hover {
+	background: #333;
+}
+
+#canvas {
+	cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: url('../images/torch.cur'), url('images/torch.cur'), n-resize; /* standard: note the different path for the .cur file */
+    cursor: url('images/torch.cur'), n-resize\9; /* IE 8 and below */
+    *cursor: url('images/torch.cur'), n-resize; /* IE 7 and below */
+    _cursor: url('images/torch.cur'), n-resize; /* IE 6 */
+	/*cursor: url('../images/torch.cur'), auto;*/
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.chicken_container 
+{
+	position:relative;
+	background: #FFFFFF;
+	/*margin: 0.5%;*/
+	float: left;
+	overflow:hidden;
+	min-height: 160px;
+	max-height: 230px;
+	border: 4px solid #EEE;
+	
+}
+
+.hype
+{
+	position:absolute;
+	/*top: 1vmin;
+	left: 2vh;
+	text-shadow: 0.5px 0.5px 0.5px rgba(255,255,255,0.5);*/
+	font-size: 14px;
+	font-style: normal;
+	padding: 0.4em 0.5em;	
+	width: 100%;
+	background: #444;
+	color: #F3F3F3;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica;
+}
+
+.chicken
+{
+	display:block;
+	position: absolute;
+	bottom: 0;
+	width:100%;
+}
+
+.chicken.visible {
+	transition: bottom 0.5s linear;
+	bottom: 0;
+}
+
+.chicken.hidden
+{
+	transition: bottom 0.3s linear;
+	bottom: -100%;
+}
+
+.chicken.dead
+{
+	transition: bottom 0s linear;
+	bottom: -100%;
+}
+
+.whack {
+	position: absolute;
+	bottom: 5vh;
+	left:25%;
+	width:50%;
+	display: none;
+}
+
+
+.whack.visible {
+	display: block;
+}
+
+
+#version p {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	padding-right: 1em;
+	font-style: italic;
+	font-size: 0.7em;
+	color: #666;
+}
+
+@media all and (orientation:portrait) {
+	.chicken_container 
+	{
+	    /* 3x4 */
+		width: 31%;
+		height: 22vh;
+		touch-action: none;
+		}
+}
+@media all and (orientation:landscape) {
+	.chicken_container 
+	{
+		/* 4x3 */
+		width: 25%;
+		height: 30vh;
+		touch-action: none;
+	}
+}
