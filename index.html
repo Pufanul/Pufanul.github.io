@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Prajeste Phenixul</title>	
+    <title>Project Roasted Chicken</title>	
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/whackaphenix.css">
   </head>
@@ -13,16 +13,16 @@
 
 			<div id="highscorecontainer" class="col">
 				<div class="d-inline p-2 bg-warning text-white border border-dark">
-					Scor: <span class="score">0</span> pui rotisati
+					SCORE: <span class="score">0</span> roasted chickens
 				</div>
 				
 			</div>
 			<div class="col">
-				<h1>Prajeste Phenixul</h1>
+				<h1>Project Roasted Chicken</h1>
 			</div>
 			<div class="col text-right">
 				<div class="timer-container d-inline p-2 bg-danger text-white border border-danger mr-1" id="#run-the-timer">
-					Timp ramas: <span class="minute">03</span>:<span class="second">00</span>
+					TIME remaining: <span class="minute">02</span>:<span class="second">00</span>
 				</div>
 				<div class="d-inline p-2 bg-success text-white border border-dark">TOP: <span id="highscore">0</span></div>
 			</div>
@@ -31,41 +31,43 @@
 		<div class="container-fluid" id="scorescreen">
 			<div class="row">
 				<div class="col">
-					<h1 class="text-center mb-5 mt-5"> Prajeste Phenixul </h1>
+					<h1 class="text-center mb-5 mt-5"> Project Roasted Chicken </h1>
 				</div>
 			</div>
 
 			<div class="row main-description">
 				<div class="col">
-					<p class="lead">Bine ati venit!</p>
-					<p>Daca te regasesti printre persoanele de mai jos, atunci acest joculet este pentru tine:</p>
+					<p class="lead">Good News @everyone!</p>
+					<p>The season for roasting chickens has begun. You don't need to feel bad about roasting them because these are a <strong>special breed</strong> of chickens:</p> 
+						<div class="alert alert-primary" role="alert">they like fire and they are reborned from their own ashes</div>
+					<p>There are multiple reasons for playing this minigame:</p>
 					<ul>
-						<li>Persoane care s-au saturat de toate mizeriile din Phenix</li>
-						<li>Persoane care asteapta un raspuns de mai bine de o saptamana din partea MOA Phenix</li>
-						<li>Persoane care pur si simplu sunt plictisiti si nu au ce face momentan</li>
+						<li>Everyone knows that all work and no play makes the chicken fly away</li>
+						<li>If you feel like <a href="https://i.kym-cdn.com/photos/images/newsfeed/000/388/361/531.jpg" target="_blank">you are not prepared</a>, remember how gravely mistaken was Illidan the first time.</li>
+						<li>Let's be honest, who doesn't like flamethrowers?</li>
 					</ul>
-					<p class="alert alert-info text-center">Pentru a incepe rotisarea, apasa butonul de mai jos</p>
-					<button class="btn btn-primary btn-lg btn-block" id="startgame">Vreau sa prajesc Phenixul!</button>
+					<p class="alert alert-info text-center">Lok-tar ogar!</p>
+					<button class="btn btn-primary btn-lg btn-block" id="startgame">Hans, get ze flammenwerfer!</button>
 				</div>
 			</div>
 			
 			<div class="row restart">
 				<div class="col-8">
 					<div class="alert alert-danger" role="alert">
-					  <h4 class="alert-heading mb-2">Timpul a expirat!</h4>
-					  <p>Felicitari, ai reusit sa prajesti <strong><span class="score">0</span> pui</strong>. <br />Stiu ca poti mai mult!</p>
+					  <h4 class="alert-heading mb-2">Your time is over adventurer!</h4>
+					  <p>Let's see how you did. Not bad, you managed to roast <strong><span class="score">0</span> chickens</strong>. <br />Is this all you've got?</p>
 					  <hr>
-					  <p class="mb-0">Pentru a reincerca, apasa butonul de mai jos.</p>
+					  <p class="mb-0">To retry, smash the button below.</p>
 					</div>
 				</div>
 				<div class="col-4">
 					<div class="card text-center">
 					  <div class="card-header">
-					    TOP pui rotisati:
+					    TOP:
 					  </div>
 					  <div class="card-body">
 					    <p class="card-text lead"><span id="highscore-2">0</span></p>
-					    <button type="button" id="reset" class="btn btn-secondary" onclick="resetHighscore()">Reseteaza</button>
+					    <button type="button" id="reset" class="btn btn-secondary" onclick="resetHighscore()">Reset</button>
 					  </div>
 					</div>
 				</div>
@@ -73,7 +75,7 @@
 
 			<div class="row restart">
 				<div class="col mt-5">
-					<button class="btn btn-warning btn-lg btn-block mt-2" id="restartgame">Vreau sa mai bag o fisa</button>
+					<button class="btn btn-warning btn-lg btn-block mt-2" id="restartgame">You shall witness my wrath again, puny chickens!</button>
 				</div>
 			</div>
 
