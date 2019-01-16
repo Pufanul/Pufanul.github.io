@@ -10,18 +10,18 @@ $( document ).ready(function() {
 		var chickens = [];
 		var chickenCount = 12;
 		var hypes = [
-			"Phenix e baza",
-			"Problema e la D3K",
-			"Traducerile sunt de vina",
+			"Cock-a-Doodle-Doo",
+			"Fry me baby one more time",
+			"You are TOO prepared!",
 			"Le job est kilé",
 			"The way of the chicken",
-			"#EasyLife",
-			"Bla Bla Blaa",
-			"Stapanul documentelor",
-			"Creme de la creme",
-			"Nu merge? Ba merge!",
-			"Evanghelist",
-			"Software ninja"			
+			"#RoastedLife",
+			"Lord of the Wings",
+			"Resurrection pending...",
+			"Crème de la crème",
+			"No chicken rules forever",
+			"Eggstraordinary",
+			"A chicken made it to the water"			
 		];
 
 		levelIncrease = function()
