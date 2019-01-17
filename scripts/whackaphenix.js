@@ -48,7 +48,8 @@ $( document ).ready(function() {
 					chicken.whack.addClass("visible");
 					chicken.whackTtl = 150; //whack image display time
 					chicken.timer = levelSpeed; //getRandomInt(1000, 4000); //the amount of time the chickens reappear after all of them have been clicked or dead
-					var numb = parseInt($("#highscore").text());
+					var numb = 0;
+					numb = parseInt($("#highscore").text());
 					if ( isNaN(numb) ) 
 					{
 						return numb = 0;
