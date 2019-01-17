@@ -54,6 +54,7 @@ $( document ).ready(function() {
 					{
 						return numb = 0;
 					}
+					console.log(num);
 					if ( numb < score )
 					{
 						window.localStorage.setItem("highScore", score);
