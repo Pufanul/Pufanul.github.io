@@ -2,15 +2,16 @@ $( document ).ready(function() {
 	function getRandomInt(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
+	var numb = parseInt($("#highscore").text());
+	console.log(numb);
+	if ( isNaN(numb) ) 
+	{
+		return numb = 0;
+	}
+	console.log(numb);
 	var game = (function() {
 		var canvas;
 		var score = 0;
-		var numb = parseInt($("#highscore").text());		
-		if ( isNaN(numb) ) 
-		{
-			return numb = 0;
-		}
-		console.log(numb);
 		var running = 0;
 		var levelSpeed = 4000;
 		var chickens = [];
